@@ -1,0 +1,27 @@
+2025-03-14 23:24:10.761 [info] Extension host with pid 228412 started
+2025-03-14 23:24:10.770 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Lock acquired.
+2025-03-14 23:24:10.864 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-03-14 23:24:10.932 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-03-14 23:24:10.933 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-03-14 23:24:11.340 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-03-14 23:24:11.530 [info] Eager extensions activated
+2025-03-14 23:24:11.530 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-14 23:24:11.536 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-14 23:24:17.885 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-03-14 23:24:17.885 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-14 23:24:22.222 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-03-14 23:30:57.263 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-03-14 23:30:57.265 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-03-14 23:30:57.300 [error] Canceled: Canceled
+	at zc (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:7:1218)
+	at file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:29:156480
+	at Array.forEach (<anonymous>)
+	at qy.dispose (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:29:156420)
+	at zz.terminate (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:116:10084)
+	at FI.terminate (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:117:1434)
+	at ts (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:190:15108)
+	at G5.a (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:190:12021)
+	at G5.h (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:28:75197)
+	at listOnTimeout (node:internal/timers:581:17)
+	at process.processTimers (node:internal/timers:519:7) setContext undefined
+2025-03-14 23:30:57.306 [info] Extension host with pid 228412 exiting with code 0

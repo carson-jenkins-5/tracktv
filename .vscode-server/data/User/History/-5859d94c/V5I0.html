@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+        <span class="active" onclick="showTab('watchlist')">WATCH LIST</span>
+        <span onclick="showTab('upcoming')">UPCOMING</span>
+    </div>
+
+    <!-- Watchlist Section -->
+    <div id="watchlist-container">
+        <h2 class="section-title">WATCH LIST</h2>
+        <div id="watchlist-items"></div>
+    </div>
+
+    <!-- Empty Watchlist Message (Only visible if no items) -->
+    <div id="empty-watchlist" class="empty-state">
+        <img src="assets/popcorn.svg" alt="Empty Watchlist">
+        <h2>Your watchlist is empty!</h2>
+        <p>Add TV shows you want to watch.</p>
+        <button onclick="window.location.href='index.html'">BROWSE ALL SHOWS</button>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="navbar">
+        <button onclick="window.location.href='index.html'">Explore</button>
+        <button class="active">Shows</button>
+        <button onclick="window.location.href='movies.html'">Movies</button>
+        <button onclick="window.location.href='profile.html'">Profile</button>
+    </nav>
+
+    <script src="watchlist.js"></script>
+</body>
+</html>

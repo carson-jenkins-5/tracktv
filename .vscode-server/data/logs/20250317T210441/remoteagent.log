@@ -1,0 +1,10 @@
+2025-03-17 21:04:41.766 [info] 
+
+
+
+
+2025-03-17 21:04:41.781 [info] Extension host agent started.
+2025-03-17 21:04:41.888 [error] [<unknown>][90a482b6][ManagementConnection] Unknown reconnection token (never seen).
+2025-03-17 21:04:44.590 [info] [<unknown>][45f3869e][ExtensionHostConnection] New connection established.
+2025-03-17 21:04:44.602 [info] [<unknown>][45f3869e][ExtensionHostConnection] <283968> Launched Extension Host Process.
+2025-03-17 21:04:44.623 [info] [<unknown>][0066ac87][ManagementConnection] New connection established.

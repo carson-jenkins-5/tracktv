@@ -1,0 +1,16 @@
+2025-03-17 18:25:34.255 [info] Extension host with pid 277905 started
+2025-03-17 18:25:34.278 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Lock acquired.
+2025-03-17 18:25:34.654 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-03-17 18:25:34.662 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-17 18:25:34.663 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-03-17 18:25:34.664 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-03-17 18:25:36.463 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-03-17 18:25:36.470 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-03-17 18:25:38.025 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-03-17 18:25:39.618 [info] Eager extensions activated
+2025-03-17 18:25:39.619 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-17 18:25:39.623 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-17 18:27:18.407 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-03-17 19:56:31.124 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-03-17 19:56:31.142 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-03-17 19:56:31.694 [info] Extension host with pid 277905 exiting with code 0

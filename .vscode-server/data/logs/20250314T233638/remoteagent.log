@@ -1,0 +1,61 @@
+2025-03-14 23:36:38.395 [info] 
+
+
+
+
+2025-03-14 23:36:38.409 [info] Extension host agent started.
+2025-03-14 23:36:38.521 [error] [<unknown>][6c7611f7][ManagementConnection] Unknown reconnection token (never seen).
+2025-03-14 23:36:41.278 [info] [<unknown>][40b47aa8][ExtensionHostConnection] New connection established.
+2025-03-14 23:36:41.287 [info] [<unknown>][40b47aa8][ExtensionHostConnection] <228900> Launched Extension Host Process.
+2025-03-14 23:36:41.311 [info] [<unknown>][be08b26d][ManagementConnection] New connection established.
+2025-03-14 23:41:38.414 [info] New EH opened, aborting shutdown
+2025-03-14 23:45:38.468 [info] [<unknown>][be08b26d][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-03-14 23:45:38.477 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/server-main.js:183:1060)
+    at process.emit (node:events:530:35)
+2025-03-14 23:53:41.250 [info] [<unknown>][be08b26d][ManagementConnection] Another client has connected, will shorten the wait for reconnection 5m before disposing...
+2025-03-14 23:53:41.256 [info] [<unknown>][d2a845f1][ManagementConnection] New connection established.
+2025-03-14 23:53:41.258 [info] [<unknown>][dec4e0fe][ExtensionHostConnection] New connection established.
+2025-03-14 23:53:41.267 [info] [<unknown>][dec4e0fe][ExtensionHostConnection] <229392> Launched Extension Host Process.
+2025-03-14 23:58:41.725 [info] [<unknown>][be08b26d][ManagementConnection] The reconnection short grace time of 5m has expired, so the connection will be disposed.
+2025-03-14 23:58:42.151 [info] [<unknown>][40b47aa8][ExtensionHostConnection] <228900> Extension Host Process exited with code: 0, signal: null.
+2025-03-15 00:08:10.465 [info] [<unknown>][d2a845f1][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-03-15 00:08:10.744 [info] [<unknown>][dec4e0fe][ExtensionHostConnection] <229392> Extension Host Process exited with code: 0, signal: null.
+2025-03-15 00:08:10.745 [info] Last EH closed, waiting before shutting down
+2025-03-15 00:08:14.663 [info] [<unknown>][6f9dcc11][ManagementConnection] New connection established.
+2025-03-15 00:08:14.703 [info] [<unknown>][67eea1a9][ExtensionHostConnection] New connection established.
+2025-03-15 00:08:14.711 [info] [<unknown>][67eea1a9][ExtensionHostConnection] <229882> Launched Extension Host Process.
+2025-03-15 00:08:24.031 [error] CodeExpectedError: Could not find pty 14 on pty host
+    at I.W (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12275)
+    at I.updateTitle (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7722)
+    at O.s.<computed> (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at el.s (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80918)
+    at el.q (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80441)
+    at ds.value (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79843)
+    at x.B (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at x.fire (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29877)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-03-15 00:08:24.057 [error] CodeExpectedError: Could not find pty 14 on pty host
+    at I.W (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:12275)
+    at I.updateIcon (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:7772)
+    at O.s.<computed> (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:45:2962)
+    at Object.call (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:28:4204)
+    at el.s (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80918)
+    at el.q (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:80441)
+    at ds.value (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:79843)
+    at x.B (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2373)
+    at x.fire (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:26:2591)
+    at process.C (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/platform/terminal/node/ptyHostMain.js:24:29877)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+2025-03-15 00:13:10.756 [info] New EH opened, aborting shutdown
+2025-03-15 00:24:23.720 [info] [<unknown>][6f9dcc11][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-03-15 03:24:06.984 [info] [<unknown>][67eea1a9][ExtensionHostConnection] <229882> Extension Host Process exited with code: 0, signal: null.
+2025-03-15 03:24:06.987 [info] Last EH closed, waiting before shutting down
+2025-03-15 03:24:31.018 [info] [<unknown>][6f9dcc11][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+2025-03-15 03:29:06.989 [info] Last EH closed, shutting down

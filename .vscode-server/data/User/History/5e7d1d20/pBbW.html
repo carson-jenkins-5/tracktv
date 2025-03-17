@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="search-bar-container">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search shows and movies">
+            <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+    </div>
+    <h2>Search Results</h2>
+    <div id="search-results"></div>
+
+    <!-- Back Button -->
+    <button onclick="window.history.back()">Back</button>
+
+    <script src="api.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

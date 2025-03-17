@@ -1,0 +1,1712 @@
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}
+Error: Cannot find module 'dotenv'
+Require stack:
+- /root/tracktv/backend/server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1145:15)
+    at Hook._require.Module.require (/usr/local/lib/node_modules/pm2/node_modules/require-in-the-middle/index.js:81:25)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (/root/tracktv/backend/server.js:5:1)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1416:10)
+    at Module.load (node:internal/modules/cjs/loader:1208:32)
+    at Module._load (node:internal/modules/cjs/loader:1024:12)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23)
+    at Module._compile (node:internal/modules/cjs/loader:1358:14) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ '/root/tracktv/backend/server.js' ]
+}

@@ -1,0 +1,31 @@
+*
+* Visual Studio Code Server
+*
+* By using the software, you agree to
+* the Visual Studio Code Server License Terms (https://aka.ms/vscode-server-license) and
+* the Microsoft Privacy Statement (https://privacy.microsoft.com/en-US/privacystatement).
+*
+Server bound to /tmp/code-4821f757-bb7d-4b77-964e-9b5e3ae68563
+Extension host agent listening on /tmp/code-4821f757-bb7d-4b77-964e-9b5e3ae68563
+
+[21:43:52] 
+
+
+
+
+[21:43:53] Extension host agent started.
+[21:43:53] [<unknown>][78787ed3][ManagementConnection] New connection established.
+[21:43:53] [<unknown>][e68b50d5][ExtensionHostConnection] New connection established.
+[21:43:53] [<unknown>][e68b50d5][ExtensionHostConnection] <105449> Launched Extension Host Process.
+[21:44:01] [<unknown>][78787ed3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+[21:44:01] [<unknown>][e68b50d5][ExtensionHostConnection] <105449> Extension Host Process exited with code: 0, signal: null.
+Cancelling previous shutdown timeout
+[21:44:01] Cancelling previous shutdown timeout
+Last EH closed, waiting before shutting down
+[21:44:01] Last EH closed, waiting before shutting down
+[21:44:02] [<unknown>][b6498a2d][ExtensionHostConnection] New connection established.
+[21:44:02] [<unknown>][b6498a2d][ExtensionHostConnection] <105500> Launched Extension Host Process.
+[21:44:02] [<unknown>][63db6958][ManagementConnection] New connection established.
+New EH opened, aborting shutdown
+[21:49:01] New EH opened, aborting shutdown
+[21:53:45] [<unknown>][63db6958][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...

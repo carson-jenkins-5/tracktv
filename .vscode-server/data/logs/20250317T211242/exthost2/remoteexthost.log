@@ -1,0 +1,18 @@
+2025-03-17 22:15:31.840 [info] Extension host with pid 3324 started
+2025-03-17 22:15:31.840 [error] Error: EEXIST: file already exists, open '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock'
+2025-03-17 22:15:31.843 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-03-17 22:15:31.854 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': The lock looks stale, waiting for 2s.
+2025-03-17 22:15:32.140 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-03-17 22:15:32.150 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-03-17 22:15:32.157 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-17 22:15:32.157 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-03-17 22:15:32.158 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-03-17 22:15:32.161 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-03-17 22:15:33.854 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': The lock looks stale even after waiting for 2s.
+2025-03-17 22:15:33.854 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Deleting a stale lock.
+2025-03-17 22:15:33.857 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Lock acquired.
+2025-03-17 22:15:34.447 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-03-17 22:15:34.468 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-03-17 22:15:35.949 [info] Eager extensions activated
+2025-03-17 22:15:35.949 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-17 22:15:35.959 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'

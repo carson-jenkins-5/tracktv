@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackTV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Search Bar -->
+    <div class="search-bar-container">
+        <input type="text" id="search-input" class="search-bar" placeholder="Search shows and movies">
+        <button type="button" id="cancel-btn">Cancel</button>
+    </div>
+
+    <!-- Explore Section -->
+    <h2>Top Shows for You</h2>
+    <div id="top-shows" class="carousel"></div>
+
+    <h2>Trending Shows</h2>
+    <div id="trending-shows" class="carousel"></div>
+
+    <h2>Trending Movies</h2>
+    <div id="trending-movies" class="carousel"></div>
+
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <button data-page="explore">Explore</button>
+        <button data-page="shows">Shows</button>
+        <button data-page="movies">Movies</button>
+        <button data-page="profile">Profile</button>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

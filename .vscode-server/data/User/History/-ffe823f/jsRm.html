@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Black Screen for Profile -->
+    <div class="profile-container">
+        <h1 style="color: white; text-align: center; padding-top: 50px;">Profile Page</h1>
+        <div class="profile-content">
+            <div class="user-profile">
+                <img src="assets/profile-placeholder.png" alt="Profile Picture" class="profile-picture">
+                <h2 class="username">Username</h2>
+                <button class="edit-profile">Edit Profile</button>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>TV Time</h3>
+                    <p>0 hrs</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Episodes Watched</h3>
+                    <p>0</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Movie Time</h3>
+                    <p>0 hrs</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Movies Watched</h3>
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="lists">
+                <h2>Your Lists</h2>
+                <button class="create-list">Create a New List</button>
+                <!-- Existing lists would be populated here -->
+            </div>
+            <div class="favorites">
+                <h2>Favorite Shows</h2>
+                <div class="favorites-carousel" id="favorite-shows">
+                    <!-- Favorite shows go here -->
+                </div>
+                <h2>Favorite Movies</h2>
+                <div class="favorites-carousel" id="favorite-movies">
+                    <!-- Favorite movies go here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar (Same as Other Pages) -->
+    <div class="navbar">
+        <button onclick="window.location.href='index.html'">Explore</button>
+        <button onclick="window.location.href='shows.html'">Shows</button>
+        <button onclick="window.location.href='movies.html'">Movies</button>
+        <button class="active">Profile</button>
+    </div>
+
+</body>
+</html>

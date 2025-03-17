@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <img class="profile-bg" src="assets/profile-bg.jpg" alt="Profile Background">
+        <div class="profile-info">
+            <img class="avatar" src="assets/avatar.jpg" alt="User Avatar">
+            <button class="edit-profile">Edit Profile</button>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-grid">
+        <div class="stat">
+            <h3>Following</h3>
+            <p>123</p>
+        </div>
+        <div class="stat">
+            <h3>Followers</h3>
+            <p>456</p>
+        </div>
+        <div class="stat">
+            <h3>Comments</h3>
+            <p>789</p>
+        </div>
+    </div>
+
+    <!-- Watch Stats Section -->
+    <div class="watch-stats">
+        <div class="watch-item" onclick="window.location.href='shows.html'">
+            <h3>TV Shows Watched</h3>
+            <p>10</p>
+        </div>
+        <div class="watch-item" onclick="window.location.href='movies.html'">
+            <h3>Movies Watched</h3>
+            <p>5</p>
+        </div>
+    </div>
+
+    <!-- Lists Section -->
+    <div class="lists-section">
+        <h2>Your Lists</h2>
+        <div class="lists-container">
+            <div class="list-item">My Favorite Shows</div>
+            <button class="add-list">+</button>
+        </div>
+    </div>
+
+    <!-- Favorites Section -->
+    <div class="favorites-section">
+        <h2>Favorite Shows</h2>
+        <div class="favorites-container">
+            <div class="favorite-item">Breaking Bad</div>
+            <button class="add-favorite">+</button>
+        </div>
+        <h2>Favorite Movies</h2>
+        <div class="favorites-container">
+            <div class="favorite-item">Inception</div>
+            <button class="add-favorite">+</button>
+        </div>
+    </div>
+
+    <!-- Navbar (Same as Other Pages) -->
+    <div class="navbar">
+        <button onclick="window.location.href='index.html'">Explore</button>
+        <button onclick="window.location.href='shows.html'">Shows</button>
+        <button onclick="window.location.href='movies.html'">Movies</button>
+        <button class="active">Profile</button>
+    </div>
+
+</body>
+</html>

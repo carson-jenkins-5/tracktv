@@ -1,0 +1,101 @@
+const express = require("express");
+const cors = require("cors");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");
+dotenv.config();
+const app = express();
+const port = 3000;
+
+const fs = require("fs");
+const usersFile = "users.json";
+const watchlistFile = "watchlist.json";
+
+app.use(cors());
+app.use(express.json());
+
+function readUsers() {
+    if (!fs.existsSync(usersFile)) return [];
+    return JSON.parse(fs.readFileSync(usersFile, "utf8"));
+}
+
+function writeUsers(users) {
+    fs.writeFileSync(usersFile, JSON.stringify(users, null, 2));
+}
+
+function authenticateToken(req, res, next) {
+    const token = req.headers.authorization?.split(" ")[1];
+    if (!token) return res.status(401).json({ error: "Access denied" });
+
+    jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+        if (err) return res.status(403).json({ error: "Invalid token" });
+        req.user = user;
+        next();
+    });
+}
+
+// User Registration
+app.post("/register", async (req, res) => {
+    const { username, password } = req.body;
+    let users = readUsers();
+
+    if (users.some(user => user.username === username)) {
+        return res.status(400).json({ error: "User already exists" });
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+    users.push({ username, password: hashedPassword });
+    writeUsers(users);
+
+    res.json({ message: "User registered successfully" });
+});
+
+// User Login
+app.post("/login", async (req, res) => {
+    const { username, password } = req.body;
+    const users = readUsers();
+    const user = users.find(user => user.username === username);
+
+    if (!user || !(await bcrypt.compare(password, user.password))) {
+        return res.status(401).json({ error: "Invalid credentials" });
+    }
+
+    const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: "1h" });
+    res.json({ token });
+});
+
+// Get Watchlist (Per User)
+app.get("/backend/watchlist", authenticateToken, (req, res) => {
+    const watchlistData = fs.existsSync(watchlistFile) ? JSON.parse(fs.readFileSync(watchlistFile, "utf8")) : {};
+    res.json(watchlistData[req.user.username] || []);
+});
+
+// Add to Watchlist
+app.post("/backend/watchlist", authenticateToken, (req, res) => {
+    const watchlistData = fs.existsSync(watchlistFile) ? JSON.parse(fs.readFileSync(watchlistFile, "utf8")) : {};
+    const userWatchlist = watchlistData[req.user.username] || [];
+
+    const { id, title, image, type } = req.body;
+    if (userWatchlist.some(item => item.id === id)) {
+        return res.status(400).json({ error: "Item already in watchlist" });
+    }
+
+    userWatchlist.push({ id, title, image, type });
+    watchlistData[req.user.username] = userWatchlist;
+    fs.writeFileSync(watchlistFile, JSON.stringify(watchlistData, null, 2));
+
+    res.json({ message: "Added to watchlist" });
+});
+
+// Remove from Watchlist
+app.delete("/backend/watchlist/:id", authenticateToken, (req, res) => {
+    const watchlistData = fs.existsSync(watchlistFile) ? JSON.parse(fs.readFileSync(watchlistFile, "utf8")) : {};
+    watchlistData[req.user.username] = (watchlistData[req.user.username] || []).filter(item => item.id !== req.params.id);
+    fs.writeFileSync(watchlistFile, JSON.stringify(watchlistData, null, 2));
+
+    res.json({ message: "Removed from watchlist" });
+});
+
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+});

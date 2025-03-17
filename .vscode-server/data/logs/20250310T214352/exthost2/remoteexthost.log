@@ -1,0 +1,16 @@
+2025-03-10 21:44:03.507 [info] Extension host with pid 105500 started
+2025-03-10 21:44:03.530 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Lock acquired.
+2025-03-10 21:44:03.650 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-03-10 21:44:03.657 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-10 21:44:03.658 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-03-10 21:44:04.732 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-03-10 21:44:04.733 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-03-10 21:44:05.301 [info] Eager extensions activated
+2025-03-10 21:44:05.302 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-10 21:44:05.303 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-10 21:44:05.505 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2025-03-10 21:44:31.994 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-03-10 21:46:16.429 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-03-11 00:53:27.441 [info] Extension host terminating: renderer disconnected for too long (1)
+2025-03-11 00:53:27.444 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/99125c4b3bde653cbaa6c15da80dd38a/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-03-11 00:53:27.546 [info] Extension host with pid 105500 exiting with code 0

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Profile Header -->
+    <div class="profile-header">
+        <div class="profile-info">
+            <img src="assets/profile-placeholder.png" alt="Profile Picture" class="profile-picture">
+            <h2 class="username">Carson Jenkins</h2>
+            <button class="edit-profile">EDIT</button>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-container">
+        <div class="stat-box">
+            <h3>TV Time</h3>
+            <p>0 months 0 days 17 hours</p>
+        </div>
+        <div class="stat-box">
+            <h3>Episodes Watched</h3>
+            <p>2</p>
+        </div>
+        <div class="stat-box">
+            <h3>Movie Time</h3>
+            <p>0 months 0 days 0 hours</p>
+        </div>
+        <div class="stat-box">
+            <h3>Movies Watched</h3>
+            <p>0</p>
+        </div>
+    </div>
+
+    <!-- Lists Section -->
+    <div class="lists-container">
+        <h2>Lists</h2>
+        <button class="create-list">+ CREATE A NEW LIST</button>
+    </div>
+
+    <!-- Favorite Shows Section -->
+    <div class="favorites-container">
+        <div class="favorite-header">
+            <h2>Favorite Shows</h2>
+            <span class="heart-icon">❤️</span>
+        </div>
+        <div class="favorites-carousel" id="favorite-shows"></div>
+    </div>
+
+    <!-- Favorite Movies Section -->
+    <div class="favorites-container">
+        <div class="favorite-header">
+            <h2>Favorite Movies</h2>
+            <span class="heart-icon">❤️</span>
+        </div>
+        <div class="favorites-carousel" id="favorite-movies"></div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button onclick="window.location.href='index.html'">Explore</button>
+        <button onclick="window.location.href='shows.html'">Shows</button>
+        <button onclick="window.location.href='movies.html'">Movies</button>
+        <button class="active">Profile</button>
+    </nav>
+    
+    <script src="script.js"></script>
+</body>

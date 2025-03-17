@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Search Bar */
+#search-container {
+    padding: 10px;
+    background-color: #111;
+}
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* SEARCH RESULTS PAGE */
+#search-results {
+    width: 90%;
+    background-color: #000;
+    margin: 10px auto;
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.search-item img {
+    width: 60px;
+    height: 90px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.search-info {
+    flex-grow: 1;
+}
+
+.search-title {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.search-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin: 3px 0;
+}
+
+.add-button {
+    background-color: #008CDA;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Carousels */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#navbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+

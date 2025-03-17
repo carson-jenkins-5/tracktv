@@ -1,0 +1,25 @@
+2025-03-10 21:43:53.102 [info] 
+
+
+
+
+2025-03-10 21:43:53.123 [info] Extension host agent started.
+2025-03-10 21:43:53.215 [info] [<unknown>][78787ed3][ManagementConnection] New connection established.
+2025-03-10 21:43:53.217 [info] [<unknown>][e68b50d5][ExtensionHostConnection] New connection established.
+2025-03-10 21:43:53.314 [info] [<unknown>][e68b50d5][ExtensionHostConnection] <105449> Launched Extension Host Process.
+2025-03-10 21:44:01.509 [info] [<unknown>][78787ed3][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-03-10 21:44:01.544 [info] [<unknown>][e68b50d5][ExtensionHostConnection] <105449> Extension Host Process exited with code: 0, signal: null.
+2025-03-10 21:44:01.545 [info] Cancelling previous shutdown timeout
+2025-03-10 21:44:01.545 [info] Last EH closed, waiting before shutting down
+2025-03-10 21:44:02.448 [info] [<unknown>][b6498a2d][ExtensionHostConnection] New connection established.
+2025-03-10 21:44:02.458 [info] [<unknown>][b6498a2d][ExtensionHostConnection] <105500> Launched Extension Host Process.
+2025-03-10 21:44:02.460 [info] [<unknown>][63db6958][ManagementConnection] New connection established.
+2025-03-10 21:49:01.552 [info] New EH opened, aborting shutdown
+2025-03-10 21:53:45.617 [info] [<unknown>][63db6958][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
+2025-03-11 00:53:27.635 [info] [<unknown>][b6498a2d][ExtensionHostConnection] <105500> Extension Host Process exited with code: 0, signal: null.
+2025-03-11 00:53:27.646 [info] Last EH closed, waiting before shutting down
+2025-03-11 00:53:27.654 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///root/.vscode-server/cli/servers/Stable-6609ac3d66f4eade5cf376d1cb76f13985724bcb/server/out/server-main.js:183:1060)
+    at process.emit (node:events:530:35)
+2025-03-11 00:53:52.491 [info] [<unknown>][63db6958][ManagementConnection] The reconnection grace time of 3h has expired, so the connection will be disposed.
+2025-03-11 00:58:27.648 [info] Last EH closed, shutting down

@@ -1,0 +1,35 @@
+2025-03-14 23:22:44.054 [info] Extension host with pid 228257 started
+2025-03-14 23:22:44.068 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/dd9db469b032034367c50135cf5e0e58/vscode.lock': Lock acquired.
+2025-03-14 23:22:44.138 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-03-14 23:22:44.141 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-14 23:22:44.141 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-03-14 23:22:44.141 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-03-14 23:22:44.142 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-03-14 23:22:45.104 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-03-14 23:22:45.105 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-03-14 23:22:47.971 [info] Eager extensions activated
+2025-03-14 23:22:47.980 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-14 23:22:48.020 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-14 23:25:45.109 [info] Extension host terminating: received terminate message from renderer
+2025-03-14 23:25:45.644 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/dd9db469b032034367c50135cf5e0e58/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-03-14 23:25:48.897 [error] Canceled: Canceled
+	at new dR (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:29:155028)
+	at qy.U (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:29:159639)
+	at s.<computed>.n.charCodeAt.s.<computed> (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:29:157133)
+	at kw.g (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:41039)
+	at kw.executeCommand (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at r.registerCommand.description (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:39873)
+	at kw.h (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:41559)
+	at kw.g (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:40636)
+	at kw.executeCommand (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:112:40543)
+	at Object.executeCommand (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:172:37375)
+	at n.default.provideCodeLenses (/root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/merge-conflict/dist/mergeConflictMain.js:2:173856)
+	at runNextTicks (node:internal/process/task_queues:60:5)
+	at process.processTimers (node:internal/timers:516:9)
+	at async Eg.provideCodeLenses (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:135:126666) setContext undefined
+2025-03-14 23:25:49.145 [error] Error: Stopping the server timed out
+	at /root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/css-language-features/client/dist/node/cssClientMain.js:1:107114
+	at async e.deactivate (/root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/extensions/css-language-features/client/dist/node/cssClientMain.js:1:440089)
+	at async Promise.all (index 0)
+	at async zz.$ (file:///root/.vscode-server/cli/servers/Stable-ddc367ed5c8936efe395cffeec279b04ffd7db78/server/out/vs/workbench/api/node/extensionHostProcess.js:116:9890)
+2025-03-14 23:25:49.211 [info] Extension host with pid 228257 exiting with code 0

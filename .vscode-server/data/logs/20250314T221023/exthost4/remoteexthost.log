@@ -1,0 +1,18 @@
+2025-03-14 23:08:47.542 [info] Extension host with pid 227909 started
+2025-03-14 23:08:47.542 [error] Error: EEXIST: file already exists, open '/root/.vscode-server/data/User/workspaceStorage/dd9db469b032034367c50135cf5e0e58/vscode.lock'
+2025-03-14 23:08:47.548 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/dd9db469b032034367c50135cf5e0e58/vscode.lock': Could not acquire lock, checking if the file is stale.
+2025-03-14 23:08:47.568 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/dd9db469b032034367c50135cf5e0e58/vscode.lock': The lock does not look stale, elapsed: 482 ms, giving up.
+2025-03-14 23:08:47.576 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/dd9db469b032034367c50135cf5e0e58-1/vscode.lock': Lock acquired.
+2025-03-14 23:08:47.642 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-03-14 23:08:47.645 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-03-14 23:08:47.646 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:javascript'
+2025-03-14 23:08:47.647 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2025-03-14 23:08:47.647 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2025-03-14 23:08:48.909 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-03-14 23:08:48.912 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-03-14 23:08:52.244 [info] Eager extensions activated
+2025-03-14 23:08:52.263 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-03-14 23:08:52.288 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-03-14 23:28:32.121 [info] Extension host terminating: renderer disconnected for too long (2)
+2025-03-14 23:28:32.153 [info] Lock '/root/.vscode-server/data/User/workspaceStorage/dd9db469b032034367c50135cf5e0e58-1/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2025-03-14 23:28:32.678 [info] Extension host with pid 227909 exiting with code 0

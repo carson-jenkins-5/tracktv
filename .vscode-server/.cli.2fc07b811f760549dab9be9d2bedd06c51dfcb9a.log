@@ -1,0 +1,5 @@
+Listening on 127.0.0.1:46787
+[2025-03-12 22:33:10] info Disposed of connection to running server.
+[2025-03-12 22:33:10] info Checking /root/.vscode-server/cli/servers/Stable-2fc07b811f760549dab9be9d2bedd06c51dfcb9a/log.txt and /root/.vscode-server/cli/servers/Stable-2fc07b811f760549dab9be9d2bedd06c51dfcb9a/pid.txt for a running server...
+[2025-03-12 22:33:10] info Found running server (pid=139991)
+[2025-03-12 23:03:21] info Disposed of connection to running server.
