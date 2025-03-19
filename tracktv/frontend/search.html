@@ -48,6 +48,33 @@
             cancelBtn.addEventListener("click", function () {
                 window.history.back();
             });
+
+            // Function to add item to watchlist
+            function addToWatchlist(media) {
+                const type = media.media_type === 'movie' ? 'movie' : 'show';
+                // Assume addWatchlistItem is a function that handles adding to the watchlist
+                addWatchlistItem(media.id, type).catch(error => {
+                    console.error("Failed to add to watchlist:", error);
+                });
+            }
+
+            // Example of mapping search results
+            function displaySearchResults(results) {
+                const searchResultsContainer = document.getElementById("search-results");
+                searchResultsContainer.innerHTML = ''; // Clear previous results
+
+                results.forEach(media => {
+                    const mediaElement = document.createElement("div");
+                    mediaElement.innerHTML = `
+                        <h3>${media.title || media.name}</h3>
+                        <button onclick="addToWatchlist(${JSON.stringify(media)})">+</button>
+                    `;
+                    searchResultsContainer.appendChild(mediaElement);
+                });
+            }
+
+            // Placeholder for search results fetching
+            // fetchSearchResults(query).then(displaySearchResults);
         });
     </script>
 

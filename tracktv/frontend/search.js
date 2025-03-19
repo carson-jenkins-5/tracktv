@@ -30,7 +30,7 @@ async function searchMovies(query) {
         id: item.id,
         title: item.name || item.title,
         poster_path: item.poster_path ? `https://image.tmdb.org/t/p/w200${item.poster_path}` : "https://via.placeholder.com/100x150",
-        type: item.media_type
+        type: item.media_type === 'tv' ? 'show' : 'movie' // Correctly set type
     }));
 }
 

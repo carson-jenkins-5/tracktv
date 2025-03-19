@@ -212,9 +212,11 @@
 
                 if (response.ok) {
                     loadWatchlist();  // Reload the watchlist immediately
+                } else {
+                    console.error("Failed to add item to watchlist:", data);
                 }
             } catch (error) {
-                console.error("Network error. Try again.");
+                console.error("Network error. Try again.", error);
             }
         }
 

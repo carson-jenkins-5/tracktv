@@ -70,10 +70,27 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     }
 
-    //  Cancel Button: Go Back
+    // Hide cancel button initially
+    if (cancelBtn) {
+        cancelBtn.style.display = "none";
+    }
+    
+    // Show cancel button only when search input has text
+    if (searchInput) {
+        searchInput.addEventListener("input", function () {
+            if (searchInput.value.trim().length > 0) {
+                cancelBtn.style.display = "block";
+            } else {
+                cancelBtn.style.display = "none";
+            }
+        });
+    }
+    
+    // Cancel button functionality: clear search input and hide button
     if (cancelBtn) {
         cancelBtn.addEventListener("click", function () {
-            window.history.back();
+            searchInput.value = "";
+            cancelBtn.style.display = "none";
         });
     }
 
@@ -127,8 +144,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                 const div = document.createElement("div");
                 div.classList.add("watchlist-item");
-
-                div.innerHTML = `<img src="${item.image}" alt="${item.title}">`;
+                const imageUrl = item.image.startsWith("http") ? item.image : `https://image.tmdb.org/t/p/w200${item.image}`;
+                div.innerHTML = `<img src="${imageUrl}" alt="${item.title}">`;
 
                 if (item.type === "show") {
                     showsContainer.appendChild(div);
@@ -157,7 +174,8 @@ async function addToWatchlist(id, title, posterPath, type) {
         window.location.href = "profile.html";
         return;
     }
-    const media = { id, title, image: `https://image.tmdb.org/t/p/w200${posterPath}`, type };
+    const fullImageUrl = posterPath.startsWith("http") ? posterPath : `https://image.tmdb.org/t/p/w200${posterPath}`;
+    const media = { id, title, image: fullImageUrl, type };
 
     try {
         const response = await fetch("/backend/watchlist", {
@@ -183,7 +201,8 @@ async function fetchTrendingShows() {
     return data.results.map(show => ({
         id: show.id,
         name: show.name,
-        poster_path: show.poster_path
+        poster_path: show.poster_path,
+        type: 'show'
     }));
 }
 
@@ -194,6 +213,7 @@ async function fetchTrendingMovies() {
     return data.results.map(movie => ({
         id: movie.id,
         title: movie.title,
-        poster_path: movie.poster_path
+        poster_path: movie.poster_path,
+        type: 'movie'
     }));
 }
