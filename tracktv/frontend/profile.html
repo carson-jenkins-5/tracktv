@@ -66,9 +66,9 @@
 <body>
 
     <!-- Login/Signup Container -->
-    <div id="auth-container" style="display: none;">
+    <div id="auth-container">
         <h2 id="auth-title">Login</h2>
-        <form id="auth-form">
+        <form id="auth-form" onsubmit="event.preventDefault(); handleAuth();">
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
             <button type="submit">Submit</button>
@@ -82,7 +82,7 @@
         <div class="profile-header">
             <div class="profile-info">
                 <img src="assets/profile-placeholder.png" alt="Profile Picture" class="profile-picture">
-                <h2 class="username">Carson Jenkins</h2>
+                <h2 class="username"></h2>
                 <button class="edit-profile">EDIT</button>
                 <button class="logout-button" onclick="logout()">LOGOUT</button>
             </div>
@@ -91,16 +91,8 @@
         <!-- Stats Section -->
         <div class="stats-container">
             <div class="stat-box">
-                <h3>TV Time</h3>
-                <p>0 months 0 days 17 hours</p>
-            </div>
-            <div class="stat-box">
                 <h3>Episodes Watched</h3>
                 <p>2</p>
-            </div>
-            <div class="stat-box">
-                <h3>Movie Time</h3>
-                <p>0 months 0 days 0 hours</p>
             </div>
             <div class="stat-box">
                 <h3>Movies Watched</h3>
@@ -120,11 +112,6 @@
             <div class="favorites-carousel" id="profile-shows"></div>
         </div>
 
-        <!-- Favorite Shows Section -->
-        <div class="favorites-container">
-            <h2>❤️ Favorite Shows</h2>
-            <div class="favorites-carousel" id="favorite-shows"></div>
-        </div>
 
         <!-- Movies Section -->
         <div class="favorites-container">
@@ -132,11 +119,6 @@
             <div class="favorites-carousel" id="profile-movies"></div>
         </div>
 
-        <!-- Favorite Movies Section -->
-        <div class="favorites-container">
-            <h2>❤️ Favorite Movies</h2>
-            <div class="favorites-carousel" id="favorite-movies"></div>
-        </div>
     </div>
 
     <!-- Navbar -->
@@ -147,18 +129,18 @@
         <button class="active">Profile</button>
     </nav>
 
-    <script src="script.js"></script>
+    <script src="api.js" defer></script>
+    <script src="script.js" defer></script>
     <script>
         document.addEventListener("DOMContentLoaded", async function () {
             loadWatchlist(); // Load watchlist on page load
+            checkAuth(); // Ensure UI updates based on sessionStorage
         });
 
         async function loadWatchlist() {
             try {
                 const response = await fetch("/backend/watchlist", {
-                    headers: {
-                        "Authorization": `Bearer ${localStorage.getItem('authToken')}`
-                    }
+                    headers: getAuthHeaders()
                 });
                 const watchlist = await response.json();
                 const watchlistContainer = document.getElementById("watchlist-items");
@@ -296,22 +278,72 @@
         // Call loadWatchlist on page load
         loadWatchlist();
 
-        function checkAuth() {
-            const token = localStorage.getItem('authToken');
-            if (token) {
-                // User is authenticated
-                document.getElementById("auth-container").style.display = "none";
-                document.getElementById("profile-container").style.display = "block";
-            } else {
-                // User is not authenticated
+        async function checkAuth() {
+            try {
+                const response = await fetch("/backend/watchlist", {
+                    method: "GET",
+                    headers: { "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password")) }
+                });
+                if (response.ok) {
+                    document.getElementById("auth-container").style.display = "none";
+                    document.getElementById("profile-container").style.display = "block";
+                    document.querySelector(".username").textContent = sessionStorage.getItem("username");
+
+                    // Hide the login/signup section entirely
+                    document.getElementById("auth-container").remove();
+                } else {
+                    throw new Error();
+                }
+            } catch {
                 document.getElementById("auth-container").style.display = "block";
                 document.getElementById("profile-container").style.display = "none";
             }
         }
 
         function logout() {
-            localStorage.removeItem('authToken');
-            checkAuth(); // Update UI after logout
+            console.log("Logging out...");
+            
+            // Clear credentials
+            sessionStorage.removeItem("username");
+            sessionStorage.removeItem("password");
+ 
+            // Ensure login/signup form appears after logout
+            let authContainer = document.getElementById("auth-container");
+            let profileContainer = document.getElementById("profile-container");
+ 
+            if (!authContainer) {
+                authContainer = document.createElement("div");
+                authContainer.id = "auth-container";
+                authContainer.innerHTML = `
+                    <h2 id="auth-title">Login</h2>
+                    <form id="auth-form" onsubmit="event.preventDefault(); handleAuth();">
+                        <input type="text" id="username" placeholder="Username" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p id="auth-toggle">Don't have an account? <span onclick="toggleAuthMode()">Sign up</span></p>
+                `;
+                document.body.prepend(authContainer);
+            } else {
+                authContainer.style.display = "block";
+            }
+ 
+            if (profileContainer) profileContainer.style.display = "none";
+ 
+            console.log("Logged out successfully. Showing login screen.");
+        }
+        
+        function toggleAuthMode() {
+            const title = document.getElementById("auth-title");
+            const toggleText = document.getElementById("auth-toggle");
+            console.log("Toggling auth mode: Current mode -", title.textContent);
+            if (title.textContent === "Login") {
+                title.textContent = "Sign Up";
+                toggleText.innerHTML = `Already have an account? <span onclick="toggleAuthMode()">Login</span>`;
+            } else {
+                title.textContent = "Login";
+                toggleText.innerHTML = `Don't have an account? <span onclick="toggleAuthMode()">Sign up</span>`;
+            }
         }
     </script>
 </body>

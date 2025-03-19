@@ -90,22 +90,45 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Load Profile Watchlist
     async function loadProfileWatchlist() {
         try {
-            const response = await fetch("/backend/watchlist");
-            const watchlist = await response.json();
-            
             const showsContainer = document.getElementById("profile-shows");
             const moviesContainer = document.getElementById("profile-movies");
+            const episodesWatchedElement = document.querySelector(".stat-box:nth-child(1) p");
+            const moviesWatchedElement = document.querySelector(".stat-box:nth-child(2) p");
 
+            // Clear previous content immediately before fetching new data
             showsContainer.innerHTML = "";
             moviesContainer.innerHTML = "";
 
+            // Fetch latest watchlist
+            const response = await fetch("/backend/watchlist", {
+                method: "GET",
+                headers: { "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password")) }
+            });
+            const watchlist = await response.json();
+
+            // Ensure the watchlist is valid before processing
+            if (!Array.isArray(watchlist)) {
+                console.error("Error: Watchlist is not an array", watchlist);
+                return;
+            }
+
+            let watchedShowsCount = 0;
+            let watchedMoviesCount = 0;
+            // Populate the watchlist with only unwatched items and count watched ones
             watchlist.forEach(item => {
+                if (item.watched) {
+                    if (item.type === "show") {
+                        watchedShowsCount++;
+                    } else if (item.type === "movie") {
+                        watchedMoviesCount++;
+                    }
+                    return;
+                }
+
                 const div = document.createElement("div");
                 div.classList.add("watchlist-item");
 
-                div.innerHTML = `
-                    <img src="${item.image}" alt="${item.title}">
-                `;
+                div.innerHTML = `<img src="${item.image}" alt="${item.title}">`;
 
                 if (item.type === "show") {
                     showsContainer.appendChild(div);
@@ -113,6 +136,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                     moviesContainer.appendChild(div);
                 }
             });
+            // Update watched stats
+            episodesWatchedElement.textContent = watchedShowsCount;
+            moviesWatchedElement.textContent = watchedMoviesCount;
         } catch (error) {
             console.error("Error loading profile watchlist:", error);
         }
@@ -127,12 +153,16 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 //  Function to Add to Watchlist
 async function addToWatchlist(id, title, posterPath, type) {
+    if (!sessionStorage.getItem("username") || !sessionStorage.getItem("password")) {
+        window.location.href = "profile.html";
+        return;
+    }
     const media = { id, title, image: `https://image.tmdb.org/t/p/w200${posterPath}`, type };
 
     try {
         const response = await fetch("/backend/watchlist", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "application/json", "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password")) },
             body: JSON.stringify(media),
         });
 
@@ -148,7 +178,7 @@ async function addToWatchlist(id, title, posterPath, type) {
 
 //  Fetch Trending Shows
 async function fetchTrendingShows() {
-    const response = await fetch("https://api.themoviedb.org/3/tv/popular?api_key=68d6cd9baadb236523ec6497d0e352a5");
+    const response = await fetch("https://api.themoviedb.org/3/discover/tv?api_key=68d6cd9baadb236523ec6497d0e352a5&language=en-US&sort_by=popularity.desc&with_origin_country=US&without_genres=10763,10767,10764&vote_count.gte=100&vote_average.gte=7.0");
     const data = await response.json();
     return data.results.map(show => ({
         id: show.id,
@@ -159,7 +189,7 @@ async function fetchTrendingShows() {
 
 //  Fetch Trending Movies
 async function fetchTrendingMovies() {
-    const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=68d6cd9baadb236523ec6497d0e352a5");
+    const response = await fetch("https://api.themoviedb.org/3/discover/movie?api_key=68d6cd9baadb236523ec6497d0e352a5&language=en-US&sort_by=popularity.desc&with_origin_country=US&without_genres=99&vote_count.gte=100&vote_average.gte=7.0");
     const data = await response.json();
     return data.results.map(movie => ({
         id: movie.id,

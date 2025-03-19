@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <button onclick="logout()">Logout</button>
+    <h2>Users</h2>
+    <ul id="user-list"></ul>
+    <script>
+        async function loadUsers() {
+            try {
+                const response = await fetch("/backend/users", {
+                    method: "GET",
+                    headers: {
+                        "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password"))
+                    }
+                });
+
+                const users = await response.json();
+                const userList = document.getElementById("user-list");
+                userList.innerHTML = "";
+
+                users.forEach(user => {
+                    if (user.username !== "admin") {
+                        const li = document.createElement("li");
+                        li.textContent = user.username;
+                        
+                        const deleteBtn = document.createElement("button");
+                        deleteBtn.textContent = "Delete";
+                        deleteBtn.onclick = () => deleteUser(user.id);
+                        
+                        li.appendChild(deleteBtn);
+                        userList.appendChild(li);
+                    }
+                });
+            } catch (error) {
+                console.error("Error loading users:", error);
+            }
+        }
+
+        async function deleteUser(userId) {
+            if (!confirm("Are you sure you want to delete this user? This will also remove their watchlist.")) return;
+
+            try {
+                const response = await fetch(`/backend/users/${userId}`, {
+                    method: "DELETE",
+                    headers: {
+                        "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password"))
+                    }
+                });
+
+                if (response.ok) {
+                    alert("User deleted successfully.");
+                    loadUsers(); // Refresh list
+                } else {
+                    alert("Error deleting user.");
+                }
+            } catch (error) {
+                console.error("Error deleting user:", error);
+            }
+        }
+
+        function logout() {
+            sessionStorage.removeItem("username");
+            sessionStorage.removeItem("password");
+            window.location.href = "profile.html";
+        }
+
+        // Ensure user list is loaded on page load
+        document.addEventListener("DOMContentLoaded", loadUsers);
+    </script>
+</body>
+</html>

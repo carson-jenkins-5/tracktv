@@ -58,12 +58,19 @@ function displaySearchResults(results) {
 
 //  Function to Add to Watchlist
 async function addToWatchlist(id, title, posterPath, type) {
+    if (!sessionStorage.getItem("username") || !sessionStorage.getItem("password")) {
+        window.location.href = "profile.html";
+        return;
+    }
     const media = { id, title, image: posterPath, type };
 
     try {
         const response = await fetch("/backend/watchlist", {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: { 
+                "Content-Type": "application/json",
+                "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password")) 
+            },
             body: JSON.stringify(media),
         });
 
