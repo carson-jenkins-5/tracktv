@@ -167,7 +167,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 });
 
-
 //  Function to Add to Watchlist
 async function addToWatchlist(id, title, posterPath, type) {
     if (!sessionStorage.getItem("username") || !sessionStorage.getItem("password")) {

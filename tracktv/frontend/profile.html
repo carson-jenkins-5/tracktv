@@ -126,6 +126,11 @@
             text-align: center;
             color: rgba(255, 255, 255, 0.5);
         }
+        .location-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            margin: 5px 0 15px 0;
+        }
     </style>
 </head>
 <body>
@@ -158,7 +163,8 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="username"></h2>
+                <h1 class="username" id="username-display"></h1>
+                <div id="location-display" class="location-text"></div>
                 <button class="edit-profile">EDIT</button>
                 <button class="logout-button" onclick="logout()">LOGOUT</button>
             </div>
@@ -207,6 +213,7 @@
 
     <script src="api.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="notifications.js" defer></script>
     <script>
         function toggleNotificationDropdown() {
             const dropdown = document.querySelector('.notification-dropdown');
@@ -225,6 +232,7 @@
         document.addEventListener("DOMContentLoaded", async function () {
             loadWatchlist(); // Load watchlist on page load
             checkAuth(); // Ensure UI updates based on sessionStorage
+            updateLocation(); // Add geolocation functionality
         });
 
         async function loadWatchlist() {
@@ -436,6 +444,35 @@
                 title.textContent = "Login";
                 toggleText.innerHTML = `Don't have an account? <span onclick="toggleAuthMode()">Sign up</span>`;
             }
+        }
+
+        // Add geolocation functionality
+        function updateLocation() {
+            const locationDisplay = document.getElementById('location-display');
+            
+            if (!navigator.geolocation) {
+                locationDisplay.style.display = 'none';
+                return;
+            }
+
+            navigator.geolocation.getCurrentPosition(
+                async (position) => {
+                    try {
+                        // Use reverse geocoding to get city name
+                        const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${position.coords.latitude}&lon=${position.coords.longitude}`);
+                        const data = await response.json();
+                        const city = data.address.city || data.address.town || data.address.village || 'your location';
+                        locationDisplay.textContent = `Watching from ${city}`;
+                    } catch (error) {
+                        console.error('Error getting location name:', error);
+                        locationDisplay.textContent = 'Watching from your location';
+                    }
+                },
+                (error) => {
+                    console.log('Geolocation error:', error);
+                    locationDisplay.style.display = 'none';
+                }
+            );
         }
     </script>
 </body>

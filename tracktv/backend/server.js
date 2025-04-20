@@ -8,7 +8,13 @@ const app = express();
 const PORT = 3000;
 const db = new sqlite3.Database(__dirname + "/tracktv.db");
 
-app.use(cors());
+// Configure CORS with specific options
+app.use(cors({
+    origin: 'https://carsonjenkins.chickenkiller.com',
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 
 // Basic Authentication Middleware
@@ -58,10 +64,32 @@ db.serialize(() => {
         watched BOOLEAN DEFAULT 0,
         FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
     )`);
+
+    db.run(`CREATE TABLE IF NOT EXISTS notifications (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT NOT NULL,
+        message TEXT NOT NULL,
+        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+    )`);
+
+    // Keep only last hour of notifications
+    db.run(`DELETE FROM notifications WHERE timestamp < datetime('now', '-1 hour')`);
 });
 
 // Serve static frontend files
 app.use(express.static("../frontend"));
+
+// GET: Fetch notifications
+app.get("/api/notifications", authenticateUser, (req, res) => {
+    const sql = `SELECT * FROM notifications 
+                WHERE timestamp > datetime('now', '-1 hour')
+                ORDER BY timestamp DESC 
+                LIMIT 50`;
+    db.all(sql, [], (err, rows) => {
+        if (err) return res.status(500).json({ error: err.message });
+        res.json(rows);
+    });
+});
 
 // Sample API endpoints
 app.get("/api/trending/shows", (req, res) => {
@@ -79,7 +107,7 @@ app.get("/api/trending/movies", (req, res) => {
 });
 
 // POST: Add to Watchlist using SQLite (secured)
-app.post("/backend/watchlist", authenticateUser, (req, res) => {
+app.post("/api/watchlist", authenticateUser, (req, res) => {
     const { title, image, type } = req.body;
     if (!title || !image || !type) {
         return res.status(400).json({ error: "Missing fields" });
@@ -88,12 +116,18 @@ app.post("/backend/watchlist", authenticateUser, (req, res) => {
     const sql = `INSERT INTO watchlist (user_id, title, image, type) VALUES (?, ?, ?, ?)`;
     db.run(sql, [req.user.id, title, image, type], function (err) {
         if (err) return res.status(500).json({ error: err.message });
+
+        // Add notification
+        const message = `${req.user.username} added ${title} to their watchlist`;
+        const notifySql = `INSERT INTO notifications (username, message) VALUES (?, ?)`;
+        db.run(notifySql, [req.user.username, message]);
+
         res.status(201).json({ message: "Added to watchlist", id: this.lastID });
     });
 });
 
-// GET: Fetch Watchlist using SQLite (secured - returns only user's watchlist)
-app.get("/backend/watchlist", authenticateUser, (req, res) => {
+// GET: Fetch Watchlist using SQLite (secured)
+app.get("/api/watchlist", authenticateUser, (req, res) => {
     const sql = `SELECT * FROM watchlist WHERE user_id = ?`;
     db.all(sql, [req.user.id], (err, rows) => {
         if (err) return res.status(500).json({ error: err.message });
@@ -102,7 +136,7 @@ app.get("/backend/watchlist", authenticateUser, (req, res) => {
 });
 
 // DELETE: Remove from Watchlist using SQLite (secured)
-app.delete("/backend/watchlist/:id", authenticateUser, (req, res) => {
+app.delete("/api/watchlist/:id", authenticateUser, (req, res) => {
     const sql = `DELETE FROM watchlist WHERE id = ? AND user_id = ?`;
     db.run(sql, [req.params.id, req.user.id], function (err) {
         if (err) return res.status(500).json({ error: err.message });
@@ -112,7 +146,7 @@ app.delete("/backend/watchlist/:id", authenticateUser, (req, res) => {
 });
 
 // PUT: Update watched status using SQLite (secured)
-app.put("/backend/watchlist/:id", authenticateUser, (req, res) => {
+app.put("/api/watchlist/:id", authenticateUser, (req, res) => {
     const { watched } = req.body;
     const sql = `UPDATE watchlist SET watched = ? WHERE id = ? AND user_id = ?`;
     db.run(sql, [watched, req.params.id, req.user.id], function (err) {
@@ -123,7 +157,7 @@ app.put("/backend/watchlist/:id", authenticateUser, (req, res) => {
 });
 
 // POST: User Signup
-app.post("/backend/signup", async (req, res) => {
+app.post("/api/signup", async (req, res) => {
     const { username, password } = req.body;
     const role = "author"; // All new users are assigned the "author" role
 
@@ -141,7 +175,7 @@ app.post("/backend/signup", async (req, res) => {
 });
 
 // GET: Fetch all users (Admin Only)
-app.get("/backend/users", authenticateUser, authorizeRole("admin"), (req, res) => {
+app.get("/api/users", authenticateUser, authorizeRole("admin"), (req, res) => {
     const sql = `SELECT id, username FROM users WHERE username != 'admin'`;
     db.all(sql, [], (err, rows) => {
         if (err) {
@@ -154,7 +188,7 @@ app.get("/backend/users", authenticateUser, authorizeRole("admin"), (req, res) =
 });
 
 // DELETE: Delete User (Admin Only)
-app.delete("/backend/users/:id", authenticateUser, authorizeRole("admin"), (req, res) => {
+app.delete("/api/users/:id", authenticateUser, authorizeRole("admin"), (req, res) => {
     const deleteWatchlistSql = `DELETE FROM watchlist WHERE user_id = ?`;
     const deleteUserSql = `DELETE FROM users WHERE id = ?`;
 
