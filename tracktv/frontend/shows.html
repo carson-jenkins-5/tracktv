@@ -27,12 +27,7 @@
     </div>
 
     <!-- Empty Watchlist Message (Only visible if no items) -->
-    <div id="empty-watchlist" class="empty-state">
-        <img src="assets/popcorn.svg" alt="Empty Watchlist">
-        <h2>Your watchlist is empty!</h2>
-        <p>Add TV shows you want to watch.</p>
-        <button onclick="window.location.href='index.html'">BROWSE ALL SHOWS</button>
-    </div>
+    <div id="empty-watchlist" class="empty-state"></div>
 
     <!-- Bottom Navigation -->
     <nav class="navbar">
@@ -62,40 +57,89 @@
                 watchlistContainer.innerHTML = "";
                 watchedContainer.innerHTML = "";
 
-                const filtered = watchlist.filter(item => item.type === "show");
+                // Filter for watchlist tab: only incomplete shows
+                const filtered = watchlist.filter(item => item.type === "show" && item.completed === 0);
                 filtered.forEach(item => {
                     const div = document.createElement("div");
                     div.classList.add("watchlist-item");
 
                     const imageUrl = item.image.startsWith("http") ? item.image : `https://image.tmdb.org/t/p/w200${item.image}`;
+                    
+                    // For watchlist tab, show the next episode to watch
+                    const currentSeason = item.season || 1;
+                    const currentEpisode = item.episode || 1;
+                    
+                    // Create watchlist item showing next episode
                     div.innerHTML = `
                         <img src="${imageUrl}" alt="${item.title}">
                         <div class="watchlist-info">
                             <p class="watchlist-title">${item.title}</p>
-                            <p class="watchlist-subtitle">${item.type.toUpperCase()}</p>
+                            ${item.type === 'show' ? `
+                                <p class="watchlist-subtitle">Season ${currentSeason}, Episode ${currentEpisode}</p>
+                                ${item.episode_title ? `<p class="episode-title">\"${item.episode_title}\"</p>` : ''}
+                            ` : `
+                                <p class="watchlist-subtitle">${item.type.toUpperCase()}</p>
+                            `}
                         </div>
                         <div class="watchlist-actions">
                             <button class="menu-button" onclick="toggleMenu('${item.id}')">⋮</button>
                             <div class="menu-dropdown" id="menu-${item.id}">
                                 <button onclick="shareTitle('${item.title}')">Share</button>
-                                <button onclick="toggleWatchedStatus('${item.id}', ${!item.watched})">
-                                    ${item.watched ? "Mark as Unwatched" : "Mark as Watched"}
-                                </button>
+                                <button onclick="toggleWatchedStatus('${item.id}', true)">Mark as Watched</button>
                                 <button onclick="removeFromWatchlist('${item.id}')">Remove</button>
                             </div>
                         </div>
                     `;
 
-                    if (item.watched) {
-                        watchedContainer.appendChild(div);
-                    } else {
-                        watchlistContainer.appendChild(div);
+                    // Always show in watchlist tab
+                    watchlistContainer.appendChild(div);
+                    
+                    // For watched tab, show the previous episode (if any episodes have been watched)
+                    if (currentEpisode > 1) {
+                        const historyDiv = div.cloneNode(true);
+                        historyDiv.querySelector('.watchlist-subtitle').textContent = `Season ${currentSeason}, Episode ${currentEpisode - 1}`;
+                        // Remove episode title for previous episode (watched tab)
+                        const epTitle = historyDiv.querySelector('.episode-title');
+                        if (epTitle) epTitle.remove();
+                        // Update menu options for watched history
+                        const menu = historyDiv.querySelector('.menu-dropdown');
+                        menu.innerHTML = `
+                            <button onclick="shareTitle('${item.title}')">Share</button>
+                            <button onclick="toggleWatchedStatus('${item.id}', false)">Mark as Unwatched</button>
+                            <button onclick="removeFromWatchlist('${item.id}')">Remove</button>
+                        `;
+                        watchedContainer.appendChild(historyDiv);
                     }
                 });
-                if(filtered.length > 0) {
-                    document.getElementById("empty-watchlist").style.display = "none";
-                } else {
+                // Filter for watched tab: only completed shows
+                const completed = watchlist.filter(item => item.type === "show" && item.completed === 1);
+                completed.forEach(item => {
+                    const div = document.createElement("div");
+                    div.classList.add("watchlist-item");
+                    const imageUrl = item.image.startsWith("http") ? item.image : `https://image.tmdb.org/t/p/w200${item.image}`;
+                    div.innerHTML = `
+                        <img src="${imageUrl}" alt="${item.title}">
+                        <div class="watchlist-info">
+                            <p class="watchlist-title">${item.title}</p>
+                            <p class="watchlist-subtitle">Completed</p>
+                        </div>
+                        <div class="watchlist-actions">
+                            <button class="menu-button" onclick="toggleMenu('${item.id}')">⋮</button>
+                            <div class="menu-dropdown" id="menu-${item.id}">
+                                <button onclick="shareTitle('${item.title}')">Share</button>
+                                <button onclick="removeFromWatchlist('${item.id}')">Remove</button>
+                            </div>
+                        </div>
+                    `;
+                    watchedContainer.appendChild(div);
+                });
+
+                // Show/hide empty state based on active tab
+                const activeTab = document.querySelector(".tabs .active").textContent.trim().toLowerCase();
+                if ((activeTab === "watch list" && filtered.length === 0) || (activeTab === "watched" && completed.length === 0)) {
                     document.getElementById("empty-watchlist").style.display = "block";
+                } else {
+                    document.getElementById("empty-watchlist").style.display = "none";
                 }
             } catch (error) {
                 console.error("Error loading watchlist:", error);
@@ -117,8 +161,17 @@
             try {
                 const response = await fetch("/backend/watchlist", {
                     method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ id, title, image, type }),
+                    headers: { 
+                        "Content-Type": "application/json",
+                        "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password"))
+                    },
+                    body: JSON.stringify({ 
+                        id, 
+                        title, 
+                        image, 
+                        type,
+                        tmdb_id: type === 'show' ? id : undefined
+                    }),
                 });
 
                 const data = await response.json();
@@ -159,7 +212,9 @@
                         "Content-Type": "application/json",
                         "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password"))
                     },
-                    body: JSON.stringify({ watched }),
+                    body: JSON.stringify({ 
+                        watched
+                    }),
                 });
 
                 if (response.ok) {
@@ -184,6 +239,8 @@
 
             document.querySelectorAll(".tabs span").forEach(tabElement => tabElement.classList.remove("active"));
             document.querySelector(`.tabs span[onclick="showTab('${tab}')"]`).classList.add("active");
+            // Re-check empty state when switching tabs
+            loadWatchlist();
         }
 
         document.addEventListener("DOMContentLoaded", function () {

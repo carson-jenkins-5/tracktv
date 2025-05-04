@@ -6,11 +6,38 @@ document.addEventListener("DOMContentLoaded", async function () {
     const cancelBtn = document.getElementById("cancel-btn");
     const navbar = document.getElementById("navbar");
 
+    // Function to get current watchlist
+    async function getWatchlist() {
+        try {
+            const response = await fetch("/backend/watchlist", {
+                method: "GET",
+                headers: { "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password")) }
+            });
+            const watchlist = await response.json();
+            console.log("Current watchlist:", watchlist);
+            return watchlist;
+        } catch (error) {
+            console.error("Error fetching watchlist:", error);
+            return [];
+        }
+    }
+
     //  Load Trending Shows
     if (trendingShowsContainer) {
         try {
-            const trendingShows = await fetchTrendingShows();
-            trendingShows.forEach(show => {
+            const [trendingShows, watchlist] = await Promise.all([
+                fetchTrendingShows(),
+                getWatchlist()
+            ]);
+            
+            console.log("Trending shows before filter:", trendingShows);
+            // Filter out shows that are already in watchlist
+            const watchlistIds = new Set(watchlist.map(item => item.tmdb_id || item.id));
+            console.log("Watchlist IDs:", watchlistIds);
+            const filteredShows = trendingShows.filter(show => !watchlistIds.has(show.id));
+            console.log("Filtered shows:", filteredShows);
+
+            filteredShows.forEach(show => {
                 const div = document.createElement("div");
                 div.classList.add("media-container");
 
@@ -29,8 +56,19 @@ document.addEventListener("DOMContentLoaded", async function () {
     //  Load Trending Movies
     if (trendingMoviesContainer) {
         try {
-            const trendingMovies = await fetchTrendingMovies();
-            trendingMovies.forEach(movie => {
+            const [trendingMovies, watchlist] = await Promise.all([
+                fetchTrendingMovies(),
+                getWatchlist()
+            ]);
+            
+            console.log("Trending movies before filter:", trendingMovies);
+            // Filter out movies that are already in watchlist
+            const watchlistIds = new Set(watchlist.map(item => item.tmdb_id || item.id));
+            console.log("Watchlist IDs:", watchlistIds);
+            const filteredMovies = trendingMovies.filter(movie => !watchlistIds.has(movie.id));
+            console.log("Filtered movies:", filteredMovies);
+
+            filteredMovies.forEach(movie => {
                 const div = document.createElement("div");
                 div.classList.add("media-container");
 
@@ -129,33 +167,48 @@ document.addEventListener("DOMContentLoaded", async function () {
                 return;
             }
 
-            let watchedShowsCount = 0;
-            let watchedMoviesCount = 0;
-            // Populate the watchlist with only unwatched items and count watched ones
-            watchlist.forEach(item => {
-                if (item.watched) {
-                    if (item.type === "show") {
-                        watchedShowsCount++;
-                    } else if (item.type === "movie") {
-                        watchedMoviesCount++;
-                    }
-                    return;
-                }
+            let totalEpisodesWatched = 0;
+            let totalMoviesWatched = 0;
 
+            // For shows: sum up watched episodes (completed = 1: sum all episodes, else: episode-1)
+            const shows = watchlist.filter(item => item.type === "show");
+            shows.forEach(item => {
+                if (item.completed === 1) {
+                    // Sum all episodes for completed shows
+                    if (item.total_episodes_per_season) {
+                        const eps = JSON.parse(item.total_episodes_per_season);
+                        totalEpisodesWatched += Object.values(eps).reduce((a, b) => a + b, 0);
+                    }
+                } else {
+                    // For in-progress, count up to the last watched episode
+                    totalEpisodesWatched += (item.episode ? item.episode - 1 : 0);
+                }
+            });
+
+            // For movies: count completed movies
+            totalMoviesWatched = watchlist.filter(item => item.type === "movie" && item.completed === 1).length;
+
+            // Populate the watchlist with only unwatched items and count watched ones
+            shows.forEach(item => {
+                if (item.completed === 1) return;
                 const div = document.createElement("div");
                 div.classList.add("watchlist-item");
                 const imageUrl = item.image.startsWith("http") ? item.image : `https://image.tmdb.org/t/p/w200${item.image}`;
                 div.innerHTML = `<img src="${imageUrl}" alt="${item.title}">`;
-
-                if (item.type === "show") {
-                    showsContainer.appendChild(div);
-                } else if (item.type === "movie") {
-                    moviesContainer.appendChild(div);
-                }
+                showsContainer.appendChild(div);
+            });
+            const movies = watchlist.filter(item => item.type === "movie");
+            movies.forEach(item => {
+                if (item.completed === 1) return;
+                const div = document.createElement("div");
+                div.classList.add("watchlist-item");
+                const imageUrl = item.image.startsWith("http") ? item.image : `https://image.tmdb.org/t/p/w200${item.image}`;
+                div.innerHTML = `<img src="${imageUrl}" alt="${item.title}">`;
+                moviesContainer.appendChild(div);
             });
             // Update watched stats
-            episodesWatchedElement.textContent = watchedShowsCount;
-            moviesWatchedElement.textContent = watchedMoviesCount;
+            episodesWatchedElement.textContent = totalEpisodesWatched;
+            moviesWatchedElement.textContent = totalMoviesWatched;
         } catch (error) {
             console.error("Error loading profile watchlist:", error);
         }
@@ -168,28 +221,30 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 //  Function to Add to Watchlist
-async function addToWatchlist(id, title, posterPath, type) {
-    if (!sessionStorage.getItem("username") || !sessionStorage.getItem("password")) {
-        window.location.href = "profile.html";
-        return;
-    }
-    const fullImageUrl = posterPath.startsWith("http") ? posterPath : `https://image.tmdb.org/t/p/w200${posterPath}`;
-    const media = { id, title, image: fullImageUrl, type };
-
+async function addToWatchlist(id, title, image, type) {
     try {
         const response = await fetch("/backend/watchlist", {
             method: "POST",
-            headers: { "Content-Type": "application/json", "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password")) },
-            body: JSON.stringify(media),
+            headers: { 
+                "Content-Type": "application/json",
+                "Authorization": "Basic " + btoa(sessionStorage.getItem("username") + ":" + sessionStorage.getItem("password"))
+            },
+            body: JSON.stringify({ 
+                id, 
+                title, 
+                image, 
+                type,
+                tmdb_id: id // Add TMDB ID for shows
+            }),
         });
 
+        const data = await response.json();
+
         if (response.ok) {
-            alert(`${title} added to watchlist!`);
-        } else {
-            alert("Already in watchlist or error occurred.");
+            loadWatchlist();  // Reload the watchlist immediately
         }
     } catch (error) {
-        console.error("Error adding to watchlist:", error);
+        console.error("Network error. Try again.");
     }
 }
 

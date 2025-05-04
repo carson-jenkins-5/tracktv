@@ -62,7 +62,7 @@ async function addToWatchlist(id, title, posterPath, type) {
         window.location.href = "profile.html";
         return;
     }
-    const media = { id, title, image: posterPath, type };
+    const media = { id, title, image: posterPath, type, tmdb_id: type === 'show' ? id : undefined };
 
     try {
         const response = await fetch("/backend/watchlist", {

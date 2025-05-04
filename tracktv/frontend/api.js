@@ -8,7 +8,7 @@ async function handleAuth() {
     }
 
     const isSignup = document.getElementById("auth-title").textContent === "Sign Up";
-    const endpoint = isSignup ? "/backend/signup" : "/backend/watchlist"; // Use an existing authenticated endpoint for login
+    const endpoint = isSignup ? "/api/signup" : "/api/watchlist"; // Changed to use /api instead of /backend
 
     try {
         const response = await fetch(endpoint, {

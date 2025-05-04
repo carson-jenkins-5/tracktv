@@ -27,12 +27,7 @@
     </div>
 
     <!-- Empty Watchlist Message (Only visible if no items) -->
-    <div id="empty-watchlist" class="empty-state">
-        <img src="assets/popcorn.svg" alt="Empty Watchlist">
-        <h2>Your watchlist is empty!</h2>
-        <p>Add TV movies you want to watch.</p>
-        <button onclick="window.location.href='index.html'">BROWSE ALL MOVIES</button>
-    </div>
+    <div id="empty-watchlist" class="empty-state"></div>
 
     <!-- Bottom Navigation -->
     <nav class="navbar">
@@ -62,7 +57,8 @@
                 watchlistContainer.innerHTML = "";
                 watchedContainer.innerHTML = "";
 
-                const filtered = watchlist.filter(item => item.type === "movie");
+                // Filter for watchlist tab: only incomplete movies
+                const filtered = watchlist.filter(item => item.type === "movie" && item.completed === 0);
                 filtered.forEach(item => {
                     const div = document.createElement("div");
                     div.classList.add("watchlist-item");
@@ -92,10 +88,36 @@
                         watchlistContainer.appendChild(div);
                     }
                 });
-                if(filtered.length > 0) {
-                    document.getElementById("empty-watchlist").style.display = "none";
-                } else {
+
+                // Filter for watched tab: only completed movies
+                const completed = watchlist.filter(item => item.type === "movie" && item.completed === 1);
+                completed.forEach(item => {
+                    const div = document.createElement("div");
+                    div.classList.add("watchlist-item");
+                    const imageUrl = item.image.startsWith("http") ? item.image : `https://image.tmdb.org/t/p/w200${item.image}`;
+                    div.innerHTML = `
+                        <img src="${imageUrl}" alt="${item.title}">
+                        <div class="watchlist-info">
+                            <p class="watchlist-title">${item.title}</p>
+                            <p class="watchlist-subtitle">Completed</p>
+                        </div>
+                        <div class="watchlist-actions">
+                            <button class="menu-button" onclick="toggleMenu('${item.id}')">⋮</button>
+                            <div class="menu-dropdown" id="menu-${item.id}">
+                                <button onclick="shareTitle('${item.title}')">Share</button>
+                                <button onclick="removeFromWatchlist('${item.id}')">Remove</button>
+                            </div>
+                        </div>
+                    `;
+                    watchedContainer.appendChild(div);
+                });
+
+                // Show/hide empty state based on active tab
+                const activeTab = document.querySelector(".tabs .active").textContent.trim().toLowerCase();
+                if ((activeTab === "watch list" && filtered.length === 0) || (activeTab === "watched" && completed.length === 0)) {
                     document.getElementById("empty-watchlist").style.display = "block";
+                } else {
+                    document.getElementById("empty-watchlist").style.display = "none";
                 }
             } catch (error) {
                 console.error("Error loading watchlist:", error);
@@ -184,6 +206,8 @@
 
             document.querySelectorAll(".tabs span").forEach(tabElement => tabElement.classList.remove("active"));
             document.querySelector(`.tabs span[onclick="showTab('${tab}')"]`).classList.add("active");
+            // Re-check empty state when switching tabs
+            loadWatchlist();
         }
 
         document.addEventListener("DOMContentLoaded", function () {
