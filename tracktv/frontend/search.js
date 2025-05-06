@@ -47,7 +47,6 @@ function displaySearchResults(results) {
             <img src="${item.poster_path}" alt="${item.title}">
             <div class="search-info">
                 <p class="search-title">${item.title}</p>
-                <p class="search-subtitle">📽 ${Math.floor(Math.random() * 900) + 100}K added this</p>
             </div>
             <button class="add-button" onclick="addToWatchlist('${item.id}', '${item.title}', '${item.poster_path}', '${item.type}')">+</button>
         `;
